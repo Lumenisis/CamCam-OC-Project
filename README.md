@@ -38,7 +38,7 @@ Dans un premier temps, nous avons la liste des modules importés dans l'IDE. Ens
 l'adressage IP des serveurs, le répertoire source et le répertoire de destination qui contiennent les fichiers sauvegardés, le nom de la base de données...
 Concernant les fonctions, nous testons à chaque fois pour MySQL, WordPress et Apache s'il existe un répertoire de sauvegarde, s'il n'y en a pas nous en
 créons un, nous sauvegardons la configuration et le tout est compressé au format .tar.gz. Puis tout le contenu du répertoire /backup du serveur local est
-envoyé par FTP dans le répertoire /backup du serveur distant (il y a un test dans la fonction qui permet de ne pas copier plusieurs fois la même chose).
+envoyé par FTP vers le répertoire /backup du serveur distant (il y a un test dans la fonction qui permet de ne pas copier plusieurs fois la même chose).
 Pour finir, toutes les fonctions sont exécutées.
 
 ## 6 - Lancement du programme :
