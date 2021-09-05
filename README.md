@@ -4,7 +4,7 @@
 
 ## Présentation du projet :
 
-Pour ce projet, j'ai créé un script avec le langage Python permettant de sauvegarder la configuration complète d'un site web réalisé avec WordPress.
+Pour ce projet, j'ai créé un script en Python permettant de sauvegarder la configuration complète d'un site web réalisé avec WordPress.
 La sauvegarde est tranférée par FTP depuis un serveur Linux local vers un serveur Linux distant.
 
 ## Pour commencer :
