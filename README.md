@@ -30,7 +30,7 @@ Pour mettre en place mon infrastructure virtuelle, voici les outils que j'ai uti
 
 J'ai utilisé cet environnement de développement pour Python parce qu'il s'agit d'un éditeur intelligent, très pratique pour les développeurs débutants.
 Il comporte des outils de débogage et de test, utilisables simplement depuis l'interface graphique.
-Il permet l'accès à une base de donnée, par exemple MySQL, et c'est une fonctionnalité très utile pour la réalisation de ce projet.
+Il permet l'accès à une base de donnée, par exemple MySQL, et c'est une fonctionnalité très utile pour la réalisation d'un projet comme celui-ci.
 
 ## 5 - Présentation du code source :
 
