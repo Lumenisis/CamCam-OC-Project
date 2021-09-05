@@ -1,5 +1,3 @@
-# CamCam-OC-Project
-
 # Administrateur Infrastructure et Cloud
 
 # Participez à la vie de la communauté Open Source
