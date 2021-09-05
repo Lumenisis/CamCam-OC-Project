@@ -44,9 +44,9 @@ Il permet l'accès à une base de donnée MySQL par exemple, fonctionnalité tr�
 
 ## Auteur :
 
-Camille GASCHET
-Étudiant chez OpenClassrooms
-Parcours "Administrateur Infrastructure et Cloud"
+    - Camille GASCHET
+    - Étudiant chez OpenClassrooms
+    - Parcours "Administrateur Infrastructure et Cloud"
 
 ## Licence :
 
