@@ -2,18 +2,18 @@
 
 # Participez à la vie de la communauté Open Source
 
-## Présentation du projet :
+## 1 - Présentation du projet :
 
 Pour ce projet, j'ai créé un script en Python permettant de sauvegarder la configuration complète d'un site web réalisé avec WordPress.
 La sauvegarde est tranférée par FTP depuis un serveur Linux local vers un serveur Linux distant.
 
-## Pour commencer :
+## 2 - Pour commencer :
 
 J'ai travaillé avec deux machines virtuelles, créées avec des images Ubuntu 21.04 Desktop (version Desktop parce que j'ai utilisé un IDE pour coder).
 J'ai utilisé l'accès par pont pour les connexions réseau, permettant ainsi à mes machines de communiquer entre elles et d'avoir internet.
 La configuration réseau sur chaque machine a été faite avec netplan.
 
-## Pré-requis :
+## 3 - Pré-requis :
 
 Pour mettre en place mon infrastructure virtuelle, voici les outils que j'ai utilisés :
 
@@ -26,13 +26,13 @@ Pour mettre en place mon infrastructure virtuelle, voici les outils que j'ai uti
 - Un IDE PyCharm installé sur le serveur local pour coder
 - Un service ProFTPd installé sur le serveur distant permettant de transférer les éléments sauvegardés
 
-## L'IDE PyCharm et ses fonctionnalités :
+## 4 - L'IDE PyCharm et ses fonctionnalités :
 
 J'ai utilisé cet environnement de développement pour Python parce qu'il s'agit d'un éditeur intelligent, très pratique pour les développeurs débutants.
 Il comporte des outils de débogage et de test, utilisables simplement depuis l'interface graphique.
 Il permet l'accès à une base de donnée, par exemple MySQL, et c'est une fonctionnalité très utile pour la réalisation de ce projet.
 
-## Présentation du code source :
+## 5 - Présentation du code source :
 
 Dans un premier temps, nous avons la liste des modules importés dans l'IDE. Ensuite, nous avons les variables, c'est à ce niveau que nous pouvons gérer
 l'adressage IP des serveurs, le répertoire source et le répertoire de destination qui contiennent les fichiers sauvegardés, le nom de la base de données...
@@ -41,7 +41,7 @@ créons un, nous sauvegardons la configuration et le tout est compressé au form
 envoyé par FTP dans le répertoire /backup du serveur distant (il y a un test dans la fonction qui permet de ne pas copier plusieurs fois la même chose).
 Pour finir, toutes les fonctions sont exécutées.
 
-## Lancement du programme :
+## 6 - Lancement du programme :
 
 Avec PyCharm, nous pouvons déjà vérifier qu'il n'y a pas d'erreur de syntaxe ou d'indentation dans notre code en haut à droite de l'interface. Normalement
 tout est bon, et il suffit d'exécuter le code avec la petite flèche verte. Si tout se passe bien, les répertoires choisis sont sauvegardés et envoyés
