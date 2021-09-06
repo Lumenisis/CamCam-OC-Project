@@ -22,7 +22,7 @@ Pour mettre en place mon infrastructure virtuelle, voici les outils que j'ai uti
     - Apache (configuration dans /etc/apache2)
     - MySQL (nom de la base de données "wordpress")
     - PHP (permettant d'utiliser la base de donnée MySQL)
-- Un service WordPress installé sur le serveur local (Configuration dans /var/www/wordpress)
+- Un service WordPress installé sur le serveur local (configuration dans /var/www/wordpress)
 - Un IDE PyCharm installé sur le serveur local pour coder
 - Un service ProFTPd installé sur le serveur distant permettant de transférer les éléments sauvegardés
 
