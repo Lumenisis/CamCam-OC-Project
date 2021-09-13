@@ -51,8 +51,8 @@ Pour finir, nous pouvons améliorer la robustesse de notre environnement de dév
 
 ## 5 - Présentation du code source :
 
-Dans un premier temps, nous avons la liste des modules importés dans l'IDE. Ensuite, nous avons les variables, c'est à ce niveau que nous pouvons gérer
-l'adressage IP des serveurs, le répertoire source et le répertoire de destination qui contiennent les fichiers sauvegardés, le nom de la base de données...
+Dans un premier temps, nous avons la liste des modules importés dans l'IDE, ou sur le système. Ensuite, nous avons les variables, c'est à ce niveau que nous
+pouvons gérer l'adressage IP des serveurs, le répertoire source et le répertoire de destination qui contiennent les fichiers sauvegardés, le nom de la base de données...
 Concernant les fonctions, nous testons à chaque fois pour MySQL, WordPress et Apache s'il existe un répertoire de sauvegarde, s'il n'y en a pas nous en
 créons un, nous sauvegardons la configuration et le tout est compressé au format .tar.gz. Puis tout le contenu du répertoire /backup du serveur local est
 envoyé par FTP vers le répertoire /backup du serveur distant (il y a un test dans la fonction qui permet de ne pas copier plusieurs fois la même chose).
@@ -66,7 +66,17 @@ sur le serveur distant. Dans le cas contraire, il faut vérifier au niveau des v
 
 ## 6B - Pour les utilisateurs, l'utilisation du script avec Python 3 :
 
+Pour reprendre ce qui a été dit plus haut, il faut avoir créé un répertoire nommé /backup à la racine de chaque système, sans ça le script ne fonctionnera
+pas... Puis il va falloir éditer le fichier main.py, avec cette commande :
 
+- $ nano main.py
+
+Il faut simplement agir au niveau des variables, et surtout au niveau de l'adressage IP des machines. Dans mon exemple, le serveur web qui est le serveur "source" a
+l'adresse 192.168.1.100 avec le masque 255.255.255.0, le serveur FTP qui est le serveur de destination a l'adresse 192.168.1.200 avec le masque 255.255.255.0. Il
+faut également modifier les variables composées d'un nom d'utilisateur et de son mot de passe. Le script état prêt, nous pouvons le lancer avec cette
+commande :
+
+- $ python3 main.py
 
 ## Auteur :
 
