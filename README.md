@@ -23,14 +23,21 @@ Pour mettre en place mon infrastructure virtuelle, voici les outils que j'ai uti
     - MySQL (nom de la base de données "wordpress")
     - PHP (permettant d'utiliser la base de donnée MySQL)
 - Un service WordPress installé sur le serveur local (configuration dans /var/www/wordpress)
-- Un IDE PyCharm installé sur le serveur local pour coder
 - Un service ProFTPd installé sur le serveur distant permettant de transférer les éléments sauvegardés
+- Un répertoire /backup créé à la racine de chaque système Linux
 
-## 4 - L'IDE PyCharm et ses fonctionnalités :
+## 4A - Pour les développeurs, l'IDE PyCharm et ses fonctionnalités :
 
 J'ai utilisé cet environnement de développement pour Python parce qu'il s'agit d'un éditeur intelligent, très pratique pour les développeurs débutants.
 Il comporte des outils de débogage et de test, utilisables simplement depuis l'interface graphique.
 Il permet l'accès à une base de donnée, par exemple MySQL, et c'est une fonctionnalité très utile pour la réalisation d'un projet comme celui-ci.
+
+## 4B - Pour les utilisateurs, le scripting avec Python sur un système Linux :
+
+Il est également possible de travailler directement sur le fichier main.py. Les dernières version du systèmes Ubuntu sont livrées avec Python 3 préinstallé.
+Nous pouvons vérifier notre version avec cette commande :
+
+- $ python3 -V
 
 ## 5 - Présentation du code source :
 
@@ -41,11 +48,15 @@ créons un, nous sauvegardons la configuration et le tout est compressé au form
 envoyé par FTP vers le répertoire /backup du serveur distant (il y a un test dans la fonction qui permet de ne pas copier plusieurs fois la même chose).
 Pour finir, toutes les fonctions sont exécutées.
 
-## 6 - Lancement du programme :
+## 6A - Pour les développeurs, le lancement du programme avec PyChram :
 
 Avec PyCharm, nous pouvons déjà vérifier qu'il n'y a pas d'erreur de syntaxe ou d'indentation dans notre code en haut à droite de l'interface. Normalement
 tout est bon, et il suffit d'exécuter le code avec la petite flèche verte. Si tout se passe bien, les répertoires choisis sont sauvegardés et envoyés
 sur le serveur distant. Dans le cas contraire, il faut vérifier au niveau des variables que la configuration système ou réseau est bonne.
+
+## 6B - Pour les utilisateurs, l'utilisation du script avec Python 3 :
+
+
 
 ## Auteur :
 
