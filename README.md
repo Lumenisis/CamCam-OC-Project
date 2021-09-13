@@ -34,10 +34,20 @@ Il permet l'accès à une base de donnée, par exemple MySQL, et c'est une fonct
 
 ## 4B - Pour les utilisateurs, le scripting avec Python sur un système Linux :
 
-Il est également possible de travailler directement sur le fichier main.py. Les dernières version du systèmes Ubuntu sont livrées avec Python 3 préinstallé.
+Il est également possible de travailler directement sur le fichier main.py. Les dernières versions du système Ubuntu sont livrées avec Python 3 préinstallé.
 Nous pouvons vérifier notre version avec cette commande :
 
 - $ python3 -V
+
+Pour gérer les paquets logiciels de Python, nous installons pip, un outil qui installera et gérera les paquets de programmation que nous pourrions vouloir utiliser.
+Nous installons également les modules utilisés dans notre script avec ces commandes :
+
+- $ apt-get install -y python3-pip
+- $ pip3 install time os pipes ftplib
+
+Pour finir, nous pouvons améliorer la robustesse de notre environnement de développement avec cette commande :
+
+- $ apt-get install -y build-essential libssl-dev libffi-dev python3-dev
 
 ## 5 - Présentation du code source :
 
