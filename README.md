@@ -40,7 +40,7 @@ Nous pouvons vérifier notre version avec cette commande :
 - $ python3 -V
 
 Pour gérer les paquets logiciels de Python, nous installons pip, un outil qui installera et gérera les paquets de programmation que nous pourrions vouloir utiliser.
-Nous installons également les modules utilisés dans notre script avec ces commandes :
+Nous installons également les modules de notre script avec ces commandes :
 
 - $ apt-get install -y python3-pip
 - $ pip3 install time os pipes ftplib
