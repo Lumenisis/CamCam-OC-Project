@@ -73,7 +73,7 @@ pas... Puis il va falloir éditer le fichier main.py, avec cette commande :
 
 Il faut simplement agir au niveau des variables, et surtout au niveau de l'adressage IP des machines. Dans mon exemple, le serveur web qui est le serveur "source" a
 l'adresse 192.168.1.100 avec le masque 255.255.255.0, le serveur FTP qui est le serveur de destination a l'adresse 192.168.1.200 avec le masque 255.255.255.0. Il
-faut également modifier les variables composées d'un nom d'utilisateur et de son mot de passe. Le script état prêt, nous pouvons le lancer avec cette
+faut également modifier les variables composées d'un nom d'utilisateur et de son mot de passe. Le script étant prêt, nous pouvons le lancer avec cette
 commande :
 
 - $ python3 main.py
