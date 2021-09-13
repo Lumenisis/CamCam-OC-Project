@@ -51,7 +51,7 @@ Pour finir, nous pouvons améliorer la robustesse de notre environnement de dév
 
 ## 5 - Présentation du code source :
 
-Dans un premier temps, nous avons la liste des modules importés dans l'IDE, ou sur le système. Ensuite, nous avons les variables, c'est à ce niveau que nous
+Dans un premier temps, nous avons la liste des modules importés dans l'IDE et sur le système. Ensuite, nous avons les variables, c'est à ce niveau que nous
 pouvons gérer l'adressage IP des serveurs, le répertoire source et le répertoire de destination qui contiennent les fichiers sauvegardés, le nom de la base de données...
 Concernant les fonctions, nous testons à chaque fois pour MySQL, WordPress et Apache s'il existe un répertoire de sauvegarde, s'il n'y en a pas nous en
 créons un, nous sauvegardons la configuration et le tout est compressé au format .tar.gz. Puis tout le contenu du répertoire /backup du serveur local est
