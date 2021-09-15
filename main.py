@@ -39,7 +39,7 @@ MYSQL_NAME_TIME = time.strftime('MySQL_%d_%m_%Y_%H_%M_%S')
 CREATE_MYSQL_BACKUP: str = MYSQL_BACKUP_PATH + '/' + MYSQL_NAME_TIME
 DB_HOST = '192.168.1.100'
 DB_USER = 'camcam'
-DB_PASSWORD = '1225'
+DB_PASSWORD = 'password'
 DB_NAME = 'wordpress'
 
 # Variables list for WordPress
@@ -56,7 +56,7 @@ CREATE_APACHE_BACKUP: str = APACHE_BACKUP_PATH + '/' + APACHE_NAME_TIME
 FTP_HOST = '192.168.1.200'
 FTP_PORT = 21
 FTP_USER = 'camcam'
-FTP_PASSWORD = '1225'
+FTP_PASSWORD = 'password'
 FTP_SOURCE = r'/backup'
 
 
